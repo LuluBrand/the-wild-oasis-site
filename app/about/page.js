@@ -3,7 +3,7 @@ import about1 from '@/public/about-1.jpg';
 import Link from 'next/link';
 import { getCabins } from '@/app/_lib/data-service';
 
-export const revalidate = 3600 * 24;
+export const revalidate = 3600;
 
 export default async function Page() {
   const cabins = await getCabins();
@@ -87,3 +87,4 @@ export default async function Page() {
     </div>
   );
 }
+
